@@ -1,23 +1,24 @@
-.navContainer{
-    width: 17%;
-    background-color:   rgba(23, 19, 30, 0.958);
-    font-weight: 500;
-    color: rgba(247, 247, 247, 0.747);
+.navContainer {
+  width: 17%;
+  background-color: rgba(23, 19, 30, 0.958);
+  font-weight: 500;
+  min-height: 100vh;
+  color: rgba(247, 247, 247, 0.747);
 }
 
-
-.section{
-    padding: 1rem;
+.section {
+  padding: 1rem;
+  min-height: 100vh;
 }
 
-.navItem{
-    padding: 1rem;
+.navItem {
+  padding: 1rem;
 }
 
-.navItem:hover{
-    background-color: rgb(244, 244, 79);
-    font-weight: 700;
-    color: black;
-    border-radius: 10px;
-    cursor: pointer;
+.navItem:hover {
+  background-color: rgb(244, 244, 79);
+  font-weight: 700;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
 }

@@ -8,7 +8,6 @@
 .jobSecondContainer{
     display: flex;
     flex-direction: column;
-    margin: 0 1rem;
 }
 
 div > .jobSecondContainer{
@@ -36,7 +35,7 @@ div > .jobSecondContainer{
 
 .secondHead{
     display: flex;
-    margin: 1rem;
+    margin: .2rem;
 }
 
 .secondHead > div{
@@ -55,4 +54,6 @@ div > .jobSecondContainer{
 
 .thirdHead{
     display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
 }
