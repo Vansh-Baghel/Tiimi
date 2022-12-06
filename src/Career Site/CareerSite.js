@@ -4,7 +4,9 @@ import fikriLogo from "../Resources/FikriLogo.png";
 import { Link } from "react-router-dom";
 import { AiOutlineFilter } from "react-icons/ai";
 import details from "./CareerData.js";
-import GoLocation from "react-icons/go"
+import {GrLocation} from "react-icons/gr";
+import {BsSearch} from "react-icons/bs";
+
 
 const CareerSite = () => {
   const type = ["Fulltime", "Freelance", "Contract", "Intern"];
@@ -76,6 +78,7 @@ const CareerSite = () => {
         <div className={classes.search_filter_container}>
           <div className={classes.search_filter_content}>
             <input placeholder="Search Jobs"></input>
+            <BsSearch />
           </div>
           <div className={classes.search_filter_content}>
             <select>
@@ -142,30 +145,68 @@ const CareerSite = () => {
           </div>
         </div>
         <div>
-          {details.map((data) =>
-              <div className={classes.applylist_container}>
-                <div className={classes.col}>
-                  <h5 className={classes.table_head}>{data.role.head}</h5>
-                  <ul className={classes.inDataul}>{data.role.roles.map((inData) => <li className={classes.inDataList}> {inData} </li>)}</ul>
-                </div>
-                <div className={classes.col}>
-                  <h5 className={classes.table_head}>{data.experience.head}</h5>
-                  <ul className={classes.inDataul}>{data.experience.years.map((inData) => <li className={classes.inDataList}> {inData} </li>)}</ul>
-                </div>
-                <div className={classes.col}>
-                  <h5 className={classes.table_head}>{data.salary.head}</h5>
-                  <ul className={classes.inDataul}>{data.salary.salaries.map((inData) => <li className={classes.inDataList}> {inData} </li>)}</ul>
-                </div>
-                <div className={classes.col}>
-                  <h5 className={classes.table_head}>{data.location.head}</h5>
-                  <ul className={classes.inDataul}>{data.location.locations.map((inData) => <li className={classes.inDataList}> <GoLocation /> {inData} </li>)}</ul>
-                </div>
-                <div className={classes.col}>
-                  <h5 className={classes.table_head}>{data.update.head}</h5>
-                  <ul className={classes.inDataul}>{data.update.updates.map((inData) => <li className={classes.inDataList}> {inData} </li>)}</ul>
-                </div>
+          {details.map((data) => (
+            <div className={classes.applylist_container}>
+              <div className={classes.col}>
+                <h5 className={classes.table_head}>{data.role.head}</h5>
+                <ul className={classes.inDataul}>
+                  {data.role.roles.map((inData) => (
+                    <>
+                    <li className={classes.inDataList_roles}> {inData} </li>
+                    <div className={classes.role_down}>
+                    <li>{data.role.domain}</li>
+                    <li>{data.role.work}</li>
+                    </div>
+                    </>
+                  ))}
+
+                </ul>
               </div>
-            )}
+              <div className={classes.col}>
+                <h5 className={classes.table_head}>{data.experience.head}</h5>
+                <ul className={classes.inDataul}>
+                  {data.experience.years.map((inData) => (
+                    <li className={classes.inDataList}> {inData} </li>
+                  ))}
+                </ul>
+              </div>
+              <div className={classes.col}>
+                <h5 className={classes.table_head}>{data.salary.head}</h5>
+                <ul className={classes.inDataul}>
+                  {data.salary.salaries.map((inData) => (
+                    <li className={classes.inDataList}> {inData} </li>
+                  ))}
+                </ul>
+              </div>
+              <div className={classes.col}>
+                <h5 className={classes.table_head}>{data.location.head}</h5>
+                <ul className={classes.inDataul}>
+                  {data.location.locations.map((inData) => (
+                    <li className={classes.inDataList}>
+                      {" "}
+                      <GrLocation/> {inData}{" "}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className={classes.col}>
+                <h5 className={classes.table_head}>{data.update.head}</h5>
+                <ul className={classes.inDataul}>
+                  {data.update.updates.map((inData) => (
+                    <li className={classes.inDataList}> {inData} </li>
+                  ))}
+                </ul>
+              </div>
+              <div className={classes.col}>
+              <h5 className={classes.table_head}> </h5>
+                <ul className={classes.inDataul}>
+                  {data.apply.applies.map((inData) => (
+                    <li className={classes.buttons}> {inData} </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
         </div>
         {/* <table className={classes.applylist_container}>
           <thead style={{width: "100%"}}>

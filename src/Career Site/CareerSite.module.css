@@ -103,6 +103,32 @@
   padding: 0.5rem;
 }
 
+.search_filter_content{
+  display: flex;
+}
+
+.table_head{
+  color: rgb(180, 177, 177);
+
+}
+
+.inDataul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.role_down{
+  display: flex;
+  color: rgb(180, 177, 177);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.role_down li{
+  padding: 0 .5rem;
+}
+
 .search_filter_content select,
 .search_filter_content input {
   width: 95%;
@@ -156,13 +182,14 @@
 /* Here we are changing the color on hovering the label */
 .checkbox_input label:hover::before,
 .checkbox_input input:hover + label::before {
-  background-color: rgba(0, 255, 0, 0.592);
+  background-color: rgba(4, 255, 4, 0.797);
   opacity: 0.7;
 }
 
 .checkbox_input input[type="checkbox"]:checked + label::before {
   content: "\002714";
-  background-color: rgba(0, 255, 0, 0.592);
+  background-color: rgba(4, 255, 4, 0.797);
+
   opacity: 0.7;
   display: flex;
   color: white;
@@ -189,13 +216,14 @@
   flex-direction: column;
 }
 
-.inDataList{
+.inDataList {
   list-style: none;
-  margin: 1rem;
+  margin: 1rem 1rem .8rem .5rem;
 }
 
-.table_head{
-  text-align: center;
+.inDataList_roles{
+  margin: .4rem;
+  font-weight: 700;
 }
 
 ul{

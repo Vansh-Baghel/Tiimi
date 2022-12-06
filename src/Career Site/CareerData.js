@@ -76,6 +76,8 @@ const details = [
   {
     role: {
       head: "Role",
+      domain : "Design",
+      work : "Fulltime",
       roles: [
         "Senior UIUX Designer",
         "3D Isometric Illustrator",
@@ -139,6 +141,9 @@ const details = [
           "1 Week ago",
         ],
       },
+      apply : {
+        applies : ["Apply" , "Apply" , "Apply" , "Apply" , "Apply" , "Apply" , "Apply" , "Apply"]
+      }
   },
 ];
 
