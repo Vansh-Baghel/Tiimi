@@ -239,7 +239,15 @@ ul {
 }
 
 .apply_buttons{
-  padding: .5rem;
+  padding: .7rem 2rem;
+  border: none;
   font-size: 17px;
-  background-color: green;
+  background-color: rgb(3, 106, 89);
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.apply_buttons:hover{
+  background-color: rgb(8, 162, 137);
 }
