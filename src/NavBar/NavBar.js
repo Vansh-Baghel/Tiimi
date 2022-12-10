@@ -14,7 +14,7 @@ const NavBar = () => {
         <div className={classes.navItem}>Inbox</div>
         <div className={classes.navItem}>Calender & Todos</div>
         <h5 style={{ color: "rgba(247, 247, 247, 0.396)" }}>Recruitment</h5>
-          <Link style={{color: "rgba(247, 247, 247, 0.747)" , textDecoration : "none"}} to="./" >
+          <Link style={{color: "rgba(247, 247, 247, 0.747)" , textDecoration : "none"}} to="./Tiimi" >
         <div className={classes.navItem}>
             Jobs
         </div>
