@@ -90,61 +90,8 @@ const CareerSite = () => {
             </select>
           </div>
         </div>
-        <div className={classes.checkbox_container}>
-          <div className={classes.each_checkbox}>
-            <div className={classes.checkbox_heading}>Job Type</div>
-            {type.map((data) => (
-              <div
-                style={{ display: "flex", padding: ".5rem" }}
-                className={classes.checkbox_input}
-              >
-                {/* Putting this for and id relation was important to make it work. */}
-                <input type="checkbox" id={data} />
-                <label for={data}>{data}</label>
-              </div>
-            ))}
-          </div>
-          <div className={classes.each_checkbox}>
-            <div className={classes.checkbox_heading}>Job Category</div>
-            {category.map((data) => (
-              <div
-                style={{ display: "flex", padding: ".5rem" }}
-                className={classes.checkbox_input}
-              >
-                {/* Putting this for and id relation was important to make it work. */}
-                <input type="checkbox" id={data} />
-                <label for={data}>{data}</label>
-              </div>
-            ))}
-          </div>
-          <div className={classes.each_checkbox}>
-            <div className={classes.checkbox_heading}>Experience</div>
-            {experience.map((data) => (
-              <div
-                style={{ display: "flex", padding: ".5rem" }}
-                className={classes.checkbox_input}
-              >
-                {/* Putting this for and id relation was important to make it work. */}
-                <input type="checkbox" id={data} />
-                <label for={data}>{data}</label>
-              </div>
-            ))}
-          </div>
-          <div className={classes.each_checkbox}>
-            <div className={classes.checkbox_heading}>Last updated</div>
-            {updated.map((data) => (
-              <div
-                style={{ display: "flex", padding: ".5rem" }}
-                className={classes.checkbox_input}
-              >
-                {/* Putting this for and id relation was important to make it work. */}
-                <input type="checkbox" id={data} />
-                <label for={data}>{data}</label>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div>
+
+        {/* <div>
           {details.map((data) => (
             <div className={classes.applylist_container}>
               <div className={classes.col}>
@@ -198,26 +145,72 @@ const CareerSite = () => {
                 </ul>
               </div>
               <div className={classes.col}>
-              <h5 className={classes.table_head}> </h5>
+              <h5 className={classes.table_head}>{data.apply.head} </h5>
                 <ul className={classes.inDataul}>
                   {data.apply.applies.map((inData) => (
-                    <li className={classes.buttons}> {inData} </li>
+                    <li className={classes.buttons}> <span> {inData} </span> </li>
                   ))}
                 </ul>
               </div>
             </div>
           ))}
+        </div> */}
+                <div className={classes.checkbox_container}>
+          <div className={classes.each_checkbox}>
+            <div className={classes.checkbox_heading}>Job Type</div>
+            {type.map((data) => (
+              <div
+                style={{ display: "flex", padding: ".5rem" }}
+                className={classes.checkbox_input}
+              >
+                {/* Putting this for and id relation was important to make it work. */}
+                <input type="checkbox" id={data} />
+                <label for={data}>{data}</label>
+              </div>
+            ))}
+          </div>
+          <div className={classes.each_checkbox}>
+            <div className={classes.checkbox_heading}>Job Category</div>
+            {category.map((data) => (
+              <div
+                style={{ display: "flex", padding: ".5rem" }}
+                className={classes.checkbox_input}
+              >
+                {/* Putting this for and id relation was important to make it work. */}
+                <input type="checkbox" id={data} />
+                <label for={data}>{data}</label>
+              </div>
+            ))}
+          </div>
+          <div className={classes.each_checkbox}>
+            <div className={classes.checkbox_heading}>Experience</div>
+            {experience.map((data) => (
+              <div
+                style={{ display: "flex", padding: ".5rem" }}
+                className={classes.checkbox_input}
+              >
+                {/* Putting this for and id relation was important to make it work. */}
+                <input type="checkbox" id={data} />
+                <label for={data}>{data}</label>
+              </div>
+            ))}
+          </div>
+          <div className={classes.each_checkbox}>
+            <div className={classes.checkbox_heading}>Last updated</div>
+            {updated.map((data) => (
+              <div
+                style={{ display: "flex", padding: ".5rem" }}
+                className={classes.checkbox_input}
+              >
+                {/* Putting this for and id relation was important to make it work. */}
+                <input type="checkbox" id={data} />
+                <label for={data}>{data}</label>
+              </div>
+            ))}
+          </div>
         </div>
-        {/* <table className={classes.applylist_container}>
-          <thead style={{width: "100%"}}>
-            <tr>
-              <th style={{width: "34%"}}>Role</th>
-              <th style={{width: "16%"}}>Experiences</th>
-              <th style={{width: "18%"}}>Salary</th>
-              <th style={{width: "18%"}}>location</th>
-              <th style={{width: "16%"}}>Last updated</th>
-            </tr>
-          </thead>
+         <table className={classes.applylist_container}>
+              <p style={{fontSize: "15px" , fontWeight : "500"}}>Table consists of : Role , Experience , Salary , Location , Last update</p>
           {details.map((data) => (
             <tbody>
               <tr className={classes.applylist_eachbox}>
@@ -255,12 +248,12 @@ const CareerSite = () => {
                 <td style={{width: "16%"}}>{data.location}</td>
                 <td style={{width: "16%"}}>{data.update}</td>
                 <td style={{width: "10%"}}>
-                  <button>Apply </button>
+                  <button className={classes.apply_buttons}>Apply </button>
                 </td>
               </tr>
-            </tbody> */}
-        {/* ))}
-        </table> */}
+            </tbody> 
+         ))}
+        </table> 
       </div>
     </div>
   );
