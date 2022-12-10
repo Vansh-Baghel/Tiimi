@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Tiimi/static/css/main.112ac4d5.css",
-    "main.js": "/Tiimi/static/js/main.feb83eef.js",
+    "main.js": "/Tiimi/static/js/main.9e499c06.js",
     "static/js/787.898b6ad9.chunk.js": "/Tiimi/static/js/787.898b6ad9.chunk.js",
     "static/media/backImage.jpg": "/Tiimi/static/media/backImage.cb53877bfa27df146dec.jpg",
     "index.html": "/Tiimi/index.html",
     "main.112ac4d5.css.map": "/Tiimi/static/css/main.112ac4d5.css.map",
-    "main.feb83eef.js.map": "/Tiimi/static/js/main.feb83eef.js.map",
+    "main.9e499c06.js.map": "/Tiimi/static/js/main.9e499c06.js.map",
     "787.898b6ad9.chunk.js.map": "/Tiimi/static/js/787.898b6ad9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.112ac4d5.css",
-    "static/js/main.feb83eef.js"
+    "static/js/main.9e499c06.js"
   ]
 }
